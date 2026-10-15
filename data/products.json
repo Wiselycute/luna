@@ -1,0 +1,260 @@
+[
+  {
+    "id": "1",
+    "name": "Golden Heart Necklace",
+    "category": "necklace",
+    "colors": [
+      "gold",
+      "white",
+      "brown"
+    ],
+    "price": 24.99,
+    "image": "/products/N1.jpg",
+    "inStock": true
+  },
+  {
+    "id": "2",
+    "name": "Pearl Drop Earrings",
+    "category": "earring",
+    "colors": [
+      "white",
+      "gold",
+      "brown"
+    ],
+    "price": 18.99,
+    "image": "/products/E2.jpg",
+    "inStock": true
+  },
+  {
+    "id": "3",
+    "name": "Ribbed Crop Top",
+    "category": "top",
+    "colors": [
+      "brown",
+      "beige",
+      "pink"
+    ],
+    "price": 22.99,
+    "image": "/products/P3.jpg",
+    "inStock": true
+  },
+  {
+    "id": "4",
+    "name": "Layered Necklace",
+    "category": "necklace",
+    "colors": [
+      "gold",
+      "beige",
+      "black"
+    ],
+    "price": 28.99,
+    "image": "/products/N4.jpg",
+    "inStock": true
+  },
+  {
+    "id": "5",
+    "name": "Hoop Earrings",
+    "category": "earring",
+    "colors": [
+      "gold",
+      "beige",
+      "black"
+    ],
+    "price": 16.99,
+    "image": "/products/E5.jpg",
+    "inStock": true
+  },
+  {
+    "id": "6",
+    "name": "Basic Tank Top",
+    "category": "top",
+    "colors": [
+      "white",
+      "brown",
+      "beige"
+    ],
+    "price": 19.99,
+    "image": "/products/P6.jpg",
+    "inStock": true
+  },
+  {
+    "id": "7",
+    "name": "Gemstone Earrings",
+    "category": "earring",
+    "colors": [
+      "gold",
+      "green",
+      "black"
+    ],
+    "price": 26.99,
+    "image": "/products/E7.jpg",
+    "inStock": true
+  },
+  {
+    "id": "8",
+    "name": "Halter Top",
+    "category": "top",
+    "colors": [
+      "black",
+      "beige",
+      "red"
+    ],
+    "price": 21.99,
+    "image": "/products/P8.jpg",
+    "inStock": true
+  },
+  {
+    "id": "9",
+    "name": "Moonstone Pendant",
+    "category": "necklace",
+    "colors": [
+      "white",
+      "gold",
+      "purple"
+    ],
+    "price": 29.99,
+    "image": "/products/N9.jpg",
+    "inStock": true
+  },
+  {
+    "id": "10",
+    "name": "Bar Chain Necklace",
+    "category": "necklace",
+    "colors": [
+      "gold",
+      "beige"
+    ],
+    "price": 27.99,
+    "image": "/products/N10.jpg",
+    "inStock": true
+  },
+  {
+    "id": "11",
+    "name": "Pearl Strand Necklace",
+    "category": "necklace",
+    "colors": [
+      "white",
+      "beige",
+      "pink"
+    ],
+    "price": 34.99,
+    "image": "/products/N11.jpg",
+    "inStock": true
+  },
+  {
+    "id": "12",
+    "name": "Emerald Drop Earrings",
+    "category": "earring",
+    "colors": [
+      "green",
+      "gold"
+    ],
+    "price": 31.99,
+    "image": "/products/E12.jpg",
+    "inStock": true
+  },
+  {
+    "id": "13",
+    "name": "Stud Earrings Set",
+    "category": "earring",
+    "colors": [
+      "gold",
+      "white",
+      "black"
+    ],
+    "price": 12.99,
+    "image": "/products/E13.jpg",
+    "inStock": false
+  },
+  {
+    "id": "14",
+    "name": "Twisted Hoop Earrings",
+    "category": "earring",
+    "colors": [
+      "gold",
+      "black",
+      "beige"
+    ],
+    "price": 17.99,
+    "image": "/products/E1.jpg",
+    "inStock": true
+  },
+  {
+    "id": "15",
+    "name": "Rose Quartz Earrings",
+    "category": "earring",
+    "colors": [
+      "pink",
+      "gold",
+      "white"
+    ],
+    "price": 22.99,
+    "image": "/products/E15.jpg",
+    "inStock": true
+  },
+  {
+    "id": "16",
+    "name": "Satin Cami Top",
+    "category": "top",
+    "colors": [
+      "beige",
+      "black",
+      "red"
+    ],
+    "price": 24.99,
+    "image": "/products/P16.jpg",
+    "inStock": true
+  },
+  {
+    "id": "17",
+    "name": "Linen Wrap Top",
+    "category": "top",
+    "colors": [
+      "white",
+      "beige",
+      "green"
+    ],
+    "price": 27.99,
+    "image": "/products/P17.jpg",
+    "inStock": false
+  },
+  {
+    "id": "18",
+    "name": "Knit Bralette Top",
+    "category": "top",
+    "colors": [
+      "black",
+      "brown",
+      "pink"
+    ],
+    "price": 20.99,
+    "image": "/products/P18.jpg",
+    "inStock": true
+  },
+  {
+    "id": "19",
+    "name": "Amethyst Pendant",
+    "category": "necklace",
+    "colors": [
+      "purple",
+      "gold",
+      "black"
+    ],
+    "price": 32.99,
+    "image": "/products/N19.jpg",
+    "inStock": true
+  },
+  {
+    "id": "20",
+    "name": "Silk Halter Top",
+    "category": "top",
+    "colors": [
+      "red",
+      "black",
+      "beige"
+    ],
+    "price": 29.99,
+    "image": "/products/P20.jpg",
+    "inStock": false
+  }
+]

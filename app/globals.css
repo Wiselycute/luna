@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 247 241 232;        /* warm ivory   #F7F1E8 */
+  --surface: 252 249 244;
+  --soft: 240 231 216;
+  --fg: 36 39 32;           /* charcoal     #242720 */
+  --muted: 92 97 86;
+  --primary: 41 70 51;      /* forest green #294633 */
+  --primary-fg: 247 241 232;
+  --accent: 214 180 122;    /* champagne    #D6B47A */
+  --clay: 198 129 105;      /* terracotta   #C68169 */
+  --line: 226 213 193;
+  --shadow: 60 45 25;
+}
+.dark {
+  --bg: 9 27 20;
+  --surface: 15 38 29;
+  --soft: 21 49 38;
+  --fg: 241 233 219;
+  --muted: 176 182 166;
+  --primary: 214 180 122;
+  --primary-fg: 22 32 26;
+  --accent: 214 180 122;
+  --clay: 214 150 125;
+  --line: 52 78 62;
+  --shadow: 0 0 0;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-bg font-sans text-fg antialiased; }
+h1, h2, h3 { @apply font-serif font-medium tracking-tight; }
+
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 2px; border-radius: 6px; }
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-primary text-primary-fg hover:bg-primary/90; }
+  .btn-outline { @apply btn border border-fg/30 text-fg hover:bg-fg/5; }
+  .card { @apply rounded-2xl border border-line bg-surface shadow-card; }
+  .field { @apply w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-fg placeholder:text-muted/70 focus:border-accent; }
+  .field[aria-invalid="true"] { @apply border-red-600; }
+  .field-error { @apply mt-1 text-xs text-red-700 dark:text-red-400; }
+  .label { @apply mb-1 block text-xs font-medium text-fg; }
+  .eyebrow { @apply text-xs tracking-wide text-muted; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
