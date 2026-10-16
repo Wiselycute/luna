@@ -49,6 +49,7 @@ export function Header() {
   const isActive = (href: string) => (href === "/" ? pathname === "/" : !href.includes("#") && pathname.startsWith(href));
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-line bg-bg/95 backdrop-blur">
       <div className="hidden border-b border-line bg-soft text-fg sm:block">
         <div className="container-page flex items-center justify-between py-1.5 text-xs">
@@ -80,16 +81,31 @@ export function Header() {
           </button>
         </div>
       </div>
-      {open && (
-        <nav id="mobile-nav" aria-label={t("nav.menu")} className="border-t border-line bg-bg md:hidden">
-          <ul className="container-page flex flex-col py-2">
+    </header>
+    {open && (
+      <>
+        <button
+          type="button"
+          aria-label={t("nav.closeMenu")}
+          className="fixed inset-0 z-40 bg-fg/40 md:hidden"
+          onClick={() => setOpen(false)}
+        />
+        <nav id="mobile-nav" role="dialog" aria-modal="true" aria-label={t("nav.menu")} className="fixed inset-y-0 right-0 z-50 w-[min(85vw,20rem)] overflow-y-auto border-l border-line bg-bg shadow-xl md:hidden">
+          <div className="flex items-center justify-between border-b border-line px-5 py-4">
+            <span className="font-serif text-lg">{t("nav.menu")}</span>
+            <button type="button" aria-label={t("nav.closeMenu")} onClick={() => setOpen(false)} className="grid h-9 w-9 place-items-center rounded-full hover:bg-soft">
+              <Icon name="close" />
+            </button>
+          </div>
+          <ul className="flex flex-col px-5 py-2">
             {[...nav, ...(pathname === "/faq" ? [] : [{ href: "/faq", key: "nav.faq" } as const])].map((n) => (
-              <li key={n.key}><Link href={n.href} aria-current={isActive(n.href) ? "page" : undefined} className="block py-3 text-base">{t(n.key)}</Link></li>
+              <li key={n.key}><Link href={n.href} aria-current={isActive(n.href) ? "page" : undefined} onClick={() => setOpen(false)} className="block border-b border-line py-4 text-base">{t(n.key)}</Link></li>
             ))}
             <li className="flex items-center justify-between py-3"><ThemeToggle /><LanguageSwitcher /></li>
           </ul>
         </nav>
-      )}
-    </header>
+      </>
+    )}
+    </>
   );
 }
